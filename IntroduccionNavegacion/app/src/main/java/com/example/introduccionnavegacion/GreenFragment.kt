@@ -5,22 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.introduccionnavegacion.databinding.FragmentGreenBinding
 
 
 class GreenFragment : Fragment() {
+
+    private var _binding:FragmentGreenBinding?=null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_green, container, false)
+        _binding= FragmentGreenBinding.inflate(inflater,container,false)
+        return binding.root
+        }
+
+
     }
 
-    companion object {
-
-        @JvmStatic
-        fun newInstance() = GreenFragment()
-
+    override fun onViewCreated(view: View,savedInstanceState: Bundle?){
+        super.onView
     }
 }

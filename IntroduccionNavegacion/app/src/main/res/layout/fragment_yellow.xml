@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A1BDA9"
-    tools:context=".GreenFragment">
+    android:background="#EFE582"
+    tools:context=".YellowFragment">
 
     <Button
-        android:id="@+id/buttonIrAmarillo"
+        android:id="@+id/buttonIrVerde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="IR AL AMARILLO" />
+        android:text="IR AL VERDE
+" />
 </FrameLayout>
